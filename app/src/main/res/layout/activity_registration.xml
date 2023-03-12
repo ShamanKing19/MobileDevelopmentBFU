@@ -31,6 +31,7 @@
     >
 
         <TextView
+            android:id="@+id/phoneTab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="20dp"
@@ -38,6 +39,7 @@
         />
 
         <TextView
+            android:id="@+id/emailTab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="По email"
@@ -56,6 +58,7 @@
     >
 
         <EditText
+            android:id="@+id/loginInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Введите Email"
@@ -64,6 +67,7 @@
         />
 
         <EditText
+            android:id="@+id/passwordInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Введите пароль"
@@ -72,6 +76,7 @@
         />
 
         <EditText
+            android:id="@+id/repeatPasswordInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Повторите пароль"
@@ -82,6 +87,7 @@
 
 
     <Button
+        android:id="@+id/registerButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Зарегистрироваться"
