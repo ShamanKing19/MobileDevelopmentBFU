@@ -1,6 +1,8 @@
 package com.sukhomlin.firstAndroidApp
 
 import android.annotation.SuppressLint
+import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.text.InputType
 import android.widget.Button
@@ -44,7 +46,12 @@ class MainActivity : AppCompatActivity()
                 val toast = Toast.makeText(this@MainActivity, "Ошибка", Toast.LENGTH_LONG)
                 toast.show()
             } else {
-                // TODO: Следующая лаба
+                val storage = getSharedPreferences("settings", Context.MODE_PRIVATE)
+                storage.edit().putString("login", login).apply()
+                storage.edit().putString("password", password).apply()
+
+                val intent = Intent(this, ContentActivity::class.java)
+                startActivity(intent)
             }
         }
 

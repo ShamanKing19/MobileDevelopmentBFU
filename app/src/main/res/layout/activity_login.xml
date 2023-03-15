@@ -32,13 +32,16 @@
     >
 
         <EditText
+            android:id="@+id/loginInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Введите email или телефон"
             android:autofillHints="emailAddress"
+            android:inputType="textEmailAddress"
         />
 
         <EditText
+            android:id="@+id/passwordInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Введите пароль"
@@ -47,6 +50,7 @@
         />
 
         <CheckBox
+            android:id="@+id/autologinCheckbox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Входить автоматически"
@@ -55,6 +59,7 @@
 
 
     <Button
+        android:id="@+id/loginButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Войти"
