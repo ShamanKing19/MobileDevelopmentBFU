@@ -19,7 +19,7 @@ class SplashActivity : AppCompatActivity() {
 
         val progressBar = findViewById<ProgressBar>(R.id.progressbar)
         val handler = Handler()
-        val stepsCount = 5
+        val stepsCount = 1
         var currentStep = 0
         var progressStatus = 0
         val stepSize = 100 / stepsCount
